@@ -5,8 +5,8 @@ import { CONTACT } from "../../siteConfig";
 const LINKS = [
   { label: "Home", href: "#home" },
   { label: "Projects", href: "#projects" },
-  { label: "AI Toolkit", href: "#toolkit" },
   { label: "How I Work", href: "#process" },
+  { label: "AI Toolkit", href: "#toolkit" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
