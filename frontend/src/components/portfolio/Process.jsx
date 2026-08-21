@@ -2,7 +2,7 @@ import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
 
 const STEPS = [
-  { n: "01", title: "Define the Goal", text: "Set a clear objective and acceptance criteria before touching any tool." },
+  { n: "01", title: "Define the Goal", text: "Set a clear objective and acceptance criteria before opening any tool." },
   { n: "02", title: "Develop / Refine the Prompt", text: "Translate the goal into structured, specific instructions." },
   { n: "03", title: "Generate", text: "Produce outputs across one or more tools and settings." },
   { n: "04", title: "Evaluate Against Requirements", text: "Compare results to the original criteria — not just to what looks good." },

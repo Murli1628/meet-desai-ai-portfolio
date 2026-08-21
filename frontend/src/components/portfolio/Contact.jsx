@@ -45,9 +45,9 @@ export const Contact = () => (
           </h2>
           <p className="mt-6 max-w-lg text-base leading-relaxed text-slate-600 sm:text-lg">
             I am interested in AI Enablement, AI Adoption, AI Project Coordination,
-            Generative AI Operations, AI Training / User Enablement, and AI Customer
-            Success roles. If you are hiring for early-career AI positions, I would
-            be glad to talk.
+            Generative AI Operations, AI Training / User Enablement, AI Customer
+            Success, and AI Operations roles. If you are hiring for early-career AI
+            positions, I would be glad to talk.
           </p>
           <p className="mt-8 flex items-center gap-2 text-sm font-medium text-slate-500" data-testid="contact-location">
             <MapPin className="h-4 w-4 text-slate-400" />

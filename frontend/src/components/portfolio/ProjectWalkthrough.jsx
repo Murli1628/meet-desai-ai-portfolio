@@ -137,12 +137,12 @@ export const ProjectWalkthrough = () => (
             <VideoCard
               testId="walkthrough-video-1"
               src="/assets/walkthrough-living-1.mp4"
-              caption="Generated walkthrough attempt — living room"
+              caption="Generated walkthrough attempt 1 — living room"
             />
             <VideoCard
               testId="walkthrough-video-2"
               src="/assets/walkthrough-living-2.mp4"
-              caption="Generated walkthrough attempt — living room"
+              caption="Generated walkthrough attempt 2 — living room"
             />
             <VideoCard
               testId="walkthrough-video-3"
