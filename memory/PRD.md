@@ -35,6 +35,7 @@ Build a polished, modern, recruiter-facing personal portfolio website for Meet D
 - 2026-07 (v1.5): Location updated to Etobicoke, Ontario, Canada per user confirmation (matches resume). Verified on live site.
 - 2026-07 (v1.6): Added user-supplied Suno AI track "From Silence to Forever" as an inline audio player in the AI Music Creation experiment card; card text updated to credit Claude-assisted lyrics/style direction (user-stated). Emergent card now notes the portfolio site itself was built with Emergent (user-stated). Verified audio serves and player renders with correct duration.
 - 2026-07 (v1.7): Recruiter-style proofread pass over all rendered site text. Fixes: added "AI Operations" keyword to contact role list; polished Process step 1 wording ("before opening any tool"); distinguished the two living-room walkthrough captions as attempt 1 / attempt 2. All other copy confirmed faithful to source PDF. Verified via live-site text assertions.
+- 2026-07 (v1.8): Added 4th user-supplied walkthrough video (living room attempt 3) filling the last placeholder slot; Project 01 now shows a full 2x2 grid of 4 real generated walkthroughs, ordered living room attempts 1-3 then living room & kitchen. Placeholder fully removed. Verified live.
 
 ## Backlog
 - P0: Add real contact details (email, LinkedIn, resume PDF) in siteConfig.js

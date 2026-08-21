@@ -1,6 +1,5 @@
 import { Reveal } from "./Reveal";
 import { WorkflowSteps } from "./WorkflowSteps";
-import { MediaPlaceholder } from "./MediaPlaceholder";
 import { VideoCard } from "./VideoCard";
 import { Chip } from "./Chip";
 
@@ -146,12 +145,13 @@ export const ProjectWalkthrough = () => (
             />
             <VideoCard
               testId="walkthrough-video-3"
+              src="/assets/walkthrough-living-3.mp4"
+              caption="Generated walkthrough attempt 3 — living room"
+            />
+            <VideoCard
+              testId="walkthrough-video-4"
               src="/assets/walkthrough-living-kitchen.mp4"
               caption="Generated walkthrough attempt — living room & kitchen"
-            />
-            <MediaPlaceholder
-              testId="walkthrough-video-placeholder-1"
-              label="Generated walkthrough example — media to be added"
             />
           </div>
         </Reveal>
