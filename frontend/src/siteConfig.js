@@ -1,8 +1,10 @@
 // Update these placeholders with real details when ready.
 export const CONTACT = {
-  email: "", // e.g. "meet@example.com"
-  linkedin: "", // e.g. "https://www.linkedin.com/in/meetdesai"
-  resumeUrl: "", // e.g. "/assets/Meet_Desai_Resume.pdf"
+  email: "meetdesai9928@gmail.com",
+  linkedin: "https://www.linkedin.com/in/meetdesai28",
+  linkedinDisplay: "linkedin.com/in/meetdesai28",
+  resumeUrl: "/assets/Meet_Desai_Resume.docx",
+  resumeDisplay: "Download (Word)",
   location: "Mississauga, Ontario, Canada",
 };
 
