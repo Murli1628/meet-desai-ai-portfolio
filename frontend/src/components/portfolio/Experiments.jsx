@@ -6,7 +6,11 @@ const EXPERIMENTS = [
   {
     icon: Music,
     title: "AI Music Creation — Suno AI",
-    text: "Explored AI-assisted song creation through concept development, lyrics and style direction, and generation.",
+    text: "Explored AI-assisted song creation through concept development, lyrics and style-direction prompts developed with Claude, and generation in Suno AI.",
+    audio: {
+      src: "/assets/from-silence-to-forever.mp3",
+      caption: "From Silence to Forever — generated track",
+    },
     testId: "experiment-suno",
   },
   {
@@ -24,7 +28,7 @@ const EXPERIMENTS = [
   {
     icon: Blocks,
     title: "AI-Assisted Prototyping — Emergent",
-    text: "Experimented with AI-assisted application and workflow prototyping.",
+    text: "Experimented with AI-assisted application and workflow prototyping — this portfolio site itself was built with Emergent.",
     testId: "experiment-emergent",
   },
 ];
@@ -61,6 +65,20 @@ export const Experiments = () => (
                   </li>
                 ))}
               </ul>
+            )}
+            {exp.audio && (
+              <div
+                data-testid="experiment-suno-audio"
+                className="mt-5 rounded-xl border border-slate-200 bg-white p-4"
+              >
+                <p className="mb-2.5 flex items-center gap-2 text-xs font-semibold text-slate-700">
+                  <exp.icon className="h-3.5 w-3.5 text-slate-400" />
+                  {exp.audio.caption}
+                </p>
+                <audio controls preload="metadata" className="w-full">
+                  <source src={exp.audio.src} type="audio/mpeg" />
+                </audio>
+              </div>
             )}
             <div data-testid={exp.testId} className="sr-only" />
           </Reveal>
