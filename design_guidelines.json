@@ -1,0 +1,142 @@
+{
+  "theme": "light",
+  "typography": {
+    "headings": {
+      "fontFamily": "'Cabinet Grotesk', 'Outfit', 'Playfair Display', sans-serif",
+      "style": "clean, confident, technology-focused, tight letter spacing",
+      "weights": ["Medium", "Bold"],
+      "sizes": {
+        "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight",
+        "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight",
+        "h3": "text-xl sm:text-2xl tracking-tight"
+      }
+    },
+    "body": {
+      "fontFamily": "'Manrope', 'IBM Plex Sans', 'Inter', sans-serif",
+      "style": "highly legible, restrained, professional",
+      "weights": ["Regular", "Medium"],
+      "sizes": {
+        "base": "text-base leading-relaxed text-slate-600",
+        "small": "text-sm text-slate-500",
+        "labels": "text-xs uppercase tracking-[0.2em] font-semibold text-slate-500"
+      }
+    }
+  },
+  "colors": {
+    "background": {
+      "primary": "#F8F9FA",
+      "surface": "#FFFFFF",
+      "secondary": "#F1F5F9"
+    },
+    "text": {
+      "primary": "#0F172A",
+      "secondary": "#475569",
+      "muted": "#94A3B8"
+    },
+    "accent": {
+      "primary": "#0F172A",
+      "subtle": "#E2E8F0",
+      "interactive": "#38BDF8",
+      "highlight": "#F8FAFC"
+    },
+    "guidelines": "Light background by default. High contrast typography. Use subtle dark/navy accents. Avoid excessive neon, large swaths of solid black, or gaudy gradients."
+  },
+  "visual_enhancers": {
+    "borders": "1px solid #E2E8F0 (border-slate-200) for structural division. No heavy dropshadows.",
+    "surfaces": "Use flat surfaces (bg-white) with subtle borders. Avoid neumorphism. Avoid dark heavy backgrounds.",
+    "glassmorphism": "Used ONLY for sticky navigation or floating action bars: bg-white/80 backdrop-blur-md border-b border-slate-200.",
+    "textures": "Minimal noise/grain is acceptable for background if subtle, but prioritize clean whitespace."
+  },
+  "components": {
+    "button": "Pill-shaped (rounded-full) or subtle rounding (rounded-lg). Solid dark (bg-slate-900 text-white) for primary, Outline (border border-slate-200 text-slate-900) for secondary. Hover state: -translate-y-0.5 and slightly lighter background. DO NOT USE shadow-xl.",
+    "card": "bg-white border border-slate-200 rounded-xl or rounded-2xl p-6 or p-8. Hover: subtle border darkening (border-slate-300) or gentle lift (-translate-y-1). No excessive shadows.",
+    "navbar": "Sticky, z-50, backdrop-blur-md bg-white/80, border-b border-slate-200. Clear logo/name on left, links in center, CTA on right. Must be visible on desktop (no hamburger menu unless mobile)."
+  },
+  "grids": {
+    "bento_grid": "Used for 'Categorized AI toolkit'. grid-cols-1 md:grid-cols-3 lg:grid-cols-4. Tight gap-4 or gap-6. Mix spans: some col-span-2, some col-span-1.",
+    "swiss_grid": "Generous spacing. Use empty columns for negative space. Asymmetric alignments to break the generic centered layout."
+  },
+  "layouts": {
+    "spacing": "Generous spacing. py-24 or py-32 for main sections. p-8 or p-12 inside large structural containers.",
+    "hero": "Left-aligned or gracefully centered. Name + Headline + CTAs. Lots of breathing room. Incorporate the headshot elegantly.",
+    "case_studies": "Three main case studies (AI Property Walkthrough, Reference-to-Image Generation, AI Avatar & Voice Clone). Alternating layouts or a clean vertical stack. Image on one side, text + workflow steps on the other.",
+    "workflow_7_step": "A clean visual timeline or a 3-column grid mapping the 7 steps ('How I Work With AI'). Use subtle typography, not heavy graphics.",
+    "contact": "Minimalist contact form + placeholder details."
+  },
+  "motion": {
+    "scrolling": "Smooth scroll (e.g., using lenis).",
+    "reveals": "Gentle Framer Motion reveals (y: 20, opacity: 0 -> y: 0, opacity: 1, duration 0.6s, ease out).",
+    "hover": "Subtle image scaling (scale 1.05) inside overflow-hidden containers on hover. Gentle project card hover states."
+  },
+  "accessibility": {
+    "contrast": "Ensure APCA contrast. Text sizes and colors must be legible. Focus states must have ring-2 ring-slate-900.",
+    "testing": "All interactive and key informational elements MUST include a data-testid attribute."
+  },
+  "media": {
+    "aspect_ratios": "Use 16:9 for case study heroes, 4:3 or 1:1 for thumbnails. Use object-cover.",
+    "images": "Images must have overflow-hidden containers with subtle rounded corners. No heavy overlays unless necessary for text readability."
+  },
+  "3d_libraries": {
+    "directive": "DO NOT USE 3D LIBRARIES. User explicitly requested 'restrained animations, avoid generic AI robot imagery, avoid gaming aesthetics'."
+  },
+  "image_urls": {
+    "hero_headshot": {
+      "url": "https://images.pexels.com/photos/37148308/pexels-photo-37148308.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Meet Desai professional headshot",
+      "category": "hero"
+    },
+    "case_study_1": {
+      "url": "https://images.pexels.com/photos/30699851/pexels-photo-30699851.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "AI Property Walkthrough interior architecture",
+      "category": "case_studies"
+    },
+    "case_study_2": {
+      "url": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGRpZ2l0YWwlMjBhcnR8ZW58MHx8fHwxNzg3MzQ5MzE5fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Reference-to-Image Generation (Abstract digital art)",
+      "category": "case_studies"
+    },
+    "case_study_3": {
+      "url": "https://images.unsplash.com/photo-1636690513351-0af1763f6237?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMGRpZ2l0YWwlMjBhcnR8ZW58MHx8fHwxNzg3MzQ5MzE5fDA&ixlib=rb-4.1.0&q=85",
+      "description": "AI Avatar & Voice Clone concept",
+      "category": "case_studies"
+    }
+  },
+  "instructions_to_main_agent": [
+    "The visual style must feel clean, sophisticated, minimal, professional, confident, and human.",
+    "Do NOT use cyberpunk design, neon, gaming aesthetics, excessive gradients, or generic AI robot imagery.",
+    "Use generous whitespace. Do not clutter the layout.",
+    "Prioritize excellent typography. Make headings bold, elegant, and readable.",
+    "Ensure subtle visual depth via light borders and muted colors, not deep shadows.",
+    "Avoid unnecessary dashboards and SaaS pricing page aesthetics.",
+    "Use a light background by default with subtle dark/navy accents.",
+    "Build 'How I Work With AI' as a clear, step-by-step visual timeline.",
+    "Categorize the AI toolkit nicely using a Bento Grid or clean list.",
+    "Keep interactions very subtle (smooth scrolling, gentle fade-ins).",
+    "All interactive elements must include a data-testid attribute.",
+    "Do NOT output the standard 'AI slop' look. Go for a 'Professional Consulting meets Modern Tech' aesthetic."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. In frontend design, this creates what users call the 'AI slop' aesthetic. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Create new components that match the style and conventions of existing components when needed",
+    "Use sonner for toasts, located in /app/src/components/ui/sonner.tsx"
+  ],
+  "GENERAL UI UX DESIGN GUIDELINES": [
+    "All interactive and key informational elements MUST include a data-testid attribute to facilitate robust automated testing.",
+    "Design for all devices. Desktop, tablet, and mobile views must be flawless.",
+    "Maintain high contrast ratios for text.",
+    "DO NOT use complete transparent background in header, overlays, any surface that has content under it. Example: Dropdown with transparent background."
+  ]
+}
