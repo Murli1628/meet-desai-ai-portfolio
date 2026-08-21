@@ -1,6 +1,7 @@
 import { Reveal } from "./Reveal";
 import { WorkflowSteps } from "./WorkflowSteps";
 import { MediaPlaceholder } from "./MediaPlaceholder";
+import { VideoCard } from "./VideoCard";
 import { Chip } from "./Chip";
 
 const PHOTOS = [
@@ -130,15 +131,26 @@ export const ProjectWalkthrough = () => (
 
         <Reveal delay={0.2}>
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
-            Generated walkthroughs
+            Generated walkthrough attempts
           </p>
           <div className="grid gap-4 sm:grid-cols-2">
-            <MediaPlaceholder
-              testId="walkthrough-video-placeholder-1"
-              label="Generated walkthrough example — media to be added"
+            <VideoCard
+              testId="walkthrough-video-1"
+              src="/assets/walkthrough-living-1.mp4"
+              caption="Generated walkthrough attempt — living room"
+            />
+            <VideoCard
+              testId="walkthrough-video-2"
+              src="/assets/walkthrough-living-2.mp4"
+              caption="Generated walkthrough attempt — living room"
+            />
+            <VideoCard
+              testId="walkthrough-video-3"
+              src="/assets/walkthrough-living-kitchen.mp4"
+              caption="Generated walkthrough attempt — living room & kitchen"
             />
             <MediaPlaceholder
-              testId="walkthrough-video-placeholder-2"
+              testId="walkthrough-video-placeholder-1"
               label="Generated walkthrough example — media to be added"
             />
           </div>

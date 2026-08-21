@@ -28,6 +28,7 @@ Build a polished, modern, recruiter-facing personal portfolio website for Meet D
 
 ## Implemented
 - 2026-07 (v1): Full landing page — Hero, 3 case studies with real PDF imagery, draggable before/after compare slider, expandable "What I Learned" (avatar project), 7-step dark process section, 9-category toolkit grid, additional experiments, currently exploring, professional foundation, contact with placeholders, sticky glass navbar with mobile menu. All content verbatim-faithful to the PDF. Verified on desktop + mobile via screenshots; compare slider and accordion interaction tested.
+- 2026-07 (v1.1): Added 3 real generated walkthrough videos (user-supplied MP4s) to Project 01 video slots; one labelled placeholder remains for a future clip. Verified all 3 video files serve and render with players.
 
 ## Backlog
 - P0: Add real contact details (email, LinkedIn, resume PDF) in siteConfig.js
