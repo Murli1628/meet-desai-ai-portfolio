@@ -32,6 +32,7 @@ Build a polished, modern, recruiter-facing personal portfolio website for Meet D
 - 2026-07 (v1.2): Added 4 real HeyGen avatar performance clips (user-supplied MP4s) to Project 03, replacing both placeholders; videos render at natural aspect to avoid cropping faces. Verified all 4 files serve and render with players.
 - 2026-07 (v1.3): Wired real contact details from user-supplied resume — email (meetdesai9928@gmail.com), LinkedIn (linkedin.com/in/meetdesai28). Note: resume lists Etobicoke ON; site keeps Mississauga per original brief pending user confirmation.
 - 2026-07 (v1.4): Swapped resume to user-supplied PDF (Meet_Desai_Resume.pdf); hero CTA, nav Resume button, and contact row all verified pointing to the PDF. Old .docx removed.
+- 2026-07 (v1.5): Location updated to Etobicoke, Ontario, Canada per user confirmation (matches resume). Verified on live site.
 
 ## Backlog
 - P0: Add real contact details (email, LinkedIn, resume PDF) in siteConfig.js

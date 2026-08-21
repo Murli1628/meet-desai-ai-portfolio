@@ -5,7 +5,7 @@ export const CONTACT = {
   linkedinDisplay: "linkedin.com/in/meetdesai28",
   resumeUrl: "/assets/Meet_Desai_Resume.pdf",
   resumeDisplay: "View (PDF)",
-  location: "Mississauga, Ontario, Canada",
+  location: "Etobicoke, Ontario, Canada",
 };
 
 export const PLACEHOLDER = {
