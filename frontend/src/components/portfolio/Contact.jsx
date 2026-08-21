@@ -61,10 +61,10 @@ export const Contact = () => (
               <div
                 key={row.label}
                 data-testid={row.testId}
-                className="flex items-center justify-between rounded-2xl border border-slate-200 bg-white px-6 py-5 transition-colors duration-200 hover:border-slate-300"
+                className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1.5 rounded-2xl border border-slate-200 bg-white px-6 py-5 transition-colors duration-200 hover:border-slate-300"
               >
                 <span className="flex items-center gap-3">
-                  <span className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-600">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-600">
                     <row.icon className="h-4.5 w-4.5" />
                   </span>
                   <span className="text-sm font-semibold text-slate-900">{row.label}</span>
@@ -74,12 +74,12 @@ export const Contact = () => (
                     href={row.href}
                     target={row.label === "Email" ? undefined : "_blank"}
                     rel="noopener noreferrer"
-                    className="text-sm font-medium text-slate-700 underline-offset-4 hover:underline"
+                    className="break-all text-right text-sm font-medium text-slate-700 underline-offset-4 hover:underline"
                   >
                     {row.value}
                   </a>
                 ) : (
-                  <span className="text-sm font-medium text-slate-400">{row.placeholder}</span>
+                  <span className="break-all text-right text-sm font-medium text-slate-400">{row.placeholder}</span>
                 )}
               </div>
             ))}
