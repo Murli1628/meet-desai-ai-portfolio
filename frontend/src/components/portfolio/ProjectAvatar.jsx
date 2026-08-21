@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { WorkflowSteps } from "./WorkflowSteps";
-import { MediaPlaceholder } from "./MediaPlaceholder";
+import { VideoCard } from "./VideoCard";
 import { Chip } from "./Chip";
 
 const CRITERIA = [
@@ -101,14 +101,30 @@ export const ProjectAvatar = () => {
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
               Generated performance clips
             </p>
-            <div className="grid gap-4 sm:grid-cols-2">
-              <MediaPlaceholder
-                testId="avatar-video-placeholder-1"
-                label="HeyGen performance clip — media to be added"
+            <div className="grid items-start gap-4 sm:grid-cols-2">
+              <VideoCard
+                testId="avatar-video-1"
+                src="/assets/avatar-cinematic-v1.mp4"
+                caption="Cinematic performance test — v1"
+                natural
               />
-              <MediaPlaceholder
-                testId="avatar-video-placeholder-2"
-                label="HeyGen performance clip — media to be added"
+              <VideoCard
+                testId="avatar-video-2"
+                src="/assets/avatar-gujarati-vav.mp4"
+                caption="Gujarati Vav cinematic test — 11s"
+                natural
+              />
+              <VideoCard
+                testId="avatar-video-3"
+                src="/assets/avatar-murli-lipsync.mp4"
+                caption="Shree Murli — precision lip-sync test"
+                natural
+              />
+              <VideoCard
+                testId="avatar-video-4"
+                src="/assets/avatar-murli-test.mp4"
+                caption="Shree Murli — private test v1"
+                natural
               />
             </div>
           </Reveal>

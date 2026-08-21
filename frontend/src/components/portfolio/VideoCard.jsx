@@ -1,6 +1,6 @@
 import { Play } from "lucide-react";
 
-export const VideoCard = ({ src, caption, testId }) => (
+export const VideoCard = ({ src, caption, testId, natural = false }) => (
   <figure
     data-testid={testId}
     className="group overflow-hidden rounded-2xl border border-slate-200 bg-white"
@@ -11,7 +11,7 @@ export const VideoCard = ({ src, caption, testId }) => (
         controls
         preload="metadata"
         playsInline
-        className="aspect-video w-full object-cover"
+        className={natural ? "w-full" : "aspect-video w-full object-cover"}
       />
     </div>
     <figcaption className="flex items-center gap-2 px-4 py-2.5 text-xs font-medium text-slate-500">
