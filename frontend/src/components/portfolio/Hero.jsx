@@ -27,9 +27,11 @@ export const Hero = () => (
           </h1>
           <p
             data-testid="hero-headline"
-            className="font-display mt-5 text-xl font-medium tracking-tight text-slate-800 sm:text-2xl"
+            className="font-display mt-5 text-lg font-medium tracking-tight text-slate-800 sm:text-2xl"
           >
-            Generative AI <span className="text-slate-300">|</span> AI Enablement{" "}
+            <span className="whitespace-nowrap">Generative AI</span>{" "}
+            <span className="text-slate-300">|</span>{" "}
+            <span className="whitespace-nowrap">AI Enablement</span>{" "}
             <span className="text-slate-300">|</span> Project &amp; Operations
             Coordination
           </p>

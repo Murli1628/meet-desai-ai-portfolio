@@ -50,6 +50,7 @@ export const CompareSlider = ({
         onChange={(e) => setPos(Number(e.target.value))}
         data-testid="compare-slider-input"
         aria-label="Compare reference and generated image"
+        style={{ touchAction: "pan-y" }}
         className="absolute inset-0 h-full w-full cursor-ew-resize opacity-0"
       />
     </div>
